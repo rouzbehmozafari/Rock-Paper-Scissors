@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TITLE</title>
+    <link rel="stylesheet" href="assets/styles/style.css">
+</head>
+<body>
+<!-- HEADER -->
+    <header>
+    </header>
+<!-- MAIN -->
+    <main>
+        <h1>Rock Paper Scissors</h1>
+        <section>
+            <div class="rounds">
+                <h2>how many rounds?</h2>
+                
+                    <form class="inps" onchange="roundCheck()" action="" onsubmit="return false">
+                        <div><input type="radio" name="round" id="round5"><label for="">5</label></div>
+                        <div><input type="radio" name="round" id="round10"><label for="">10</label></div>
+                        <div><input type="radio" name="round" id="round15"><label for="">15</label></div>
+                        <div><input type="radio" name="round" id="round20"><label for="">20</label></div>
+                    </form>
+                
+            </div>
+            <div class="board">
+                <div class="resnum">
+                    <span id="uRes"></span>
+                    <span>:</span>
+                    <span id="cRes"></span>
+                </div>
+                <div class="userRedBox">USER</div>
+                <div class="compRedBox">COMP</div>
+            </div>
+            <h2>Let's play</h2>
+            <div class="signs">
+                <img id="rock" src="assets/images/rock.png" alt="rock">
+                <img id="scissor" src="assets/images/paper.png" alt="paper">
+                <img id="paper" src="assets/images/scissor.png" alt="scissor">
+            </div>
+            <h3>MAKE YOUR MOVE.</h3>
+            <P>restart</P>
+        </section>
+    </main>
+<!-- FOOTER -->
+    <footer>
+    </footer>
+<!-- SCRIPT -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

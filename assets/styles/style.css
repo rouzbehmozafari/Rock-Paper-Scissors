@@ -1,0 +1,144 @@
+/* Rout elements */
+/* General Styles */
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  font-family: 'Karla', sans-serif;
+  font-weight: lighter;
+  text-align: center;
+}
+
+body {
+  max-width: 1440px;
+  background-color: #18122d;
+}
+
+a {
+  color: black;
+}
+
+h1 {
+  background-color: white;
+  padding: 1.5%;
+  font-size: 25px;
+  color: gray;
+}
+
+section {
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.inps {
+  margin-bottom: 0;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  margin: 0 auto;
+  width: 100%;
+  padding-bottom: 0;
+}
+
+.inps input {
+  margin-right: 10%;
+}
+
+.inps div {
+  padding: 0;
+}
+
+div {
+  margin: 2% auto;
+  padding: 20px 5px;
+  width: 30%;
+}
+
+img {
+  width: 25%;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+img:hover {
+  cursor: pointer;
+  -webkit-box-shadow: 0px 0px 15px 1px red;
+          box-shadow: 0px 0px 15px 1px red;
+  border-radius: 50%;
+  -webkit-transition: -webkit-box-shadow .5s;
+  transition: -webkit-box-shadow .5s;
+  transition: box-shadow .5s;
+  transition: box-shadow .5s, -webkit-box-shadow .5s;
+}
+
+.rounds, .board {
+  border: 3px white solid;
+  border-radius: 5px;
+}
+
+.board {
+  position: relative;
+  height: 110px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 25px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.board .userRedBox, .board .compRedBox {
+  position: absolute;
+  background-color: red;
+  width: 55px;
+  padding: 7px 6px;
+  margin: 0;
+  right: -30px;
+  top: 38px;
+  font-size: 14px;
+}
+
+.board .userRedBox {
+  left: -30px;
+  right: unset;
+}
+
+h2 {
+  font-size: 25px;
+}
+
+p {
+  padding: 3%;
+  font-size: 20px;
+  color: orange;
+  text-decoration: underline;
+}
+
+p:hover {
+  cursor: pointer;
+}
+
+/* Media */
+@media screen and (max-width: 800px) {
+  div {
+    width: 50%;
+  }
+}
+/*# sourceMappingURL=style.css.map */

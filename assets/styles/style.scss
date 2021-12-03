@@ -1,0 +1,122 @@
+// Imports
+
+/* Rout elements */
+$fsize : 25px;
+/* General Styles */
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Karla', sans-serif;
+    font-weight: lighter;
+    text-align: center;
+}
+
+body {
+    max-width: 1440px;
+    background-color: rgb(24, 18, 45);
+}
+a {
+    color: black;
+}
+h1 {
+    background-color: white;
+    padding: 1.5%;
+    font-size: $fsize;
+    color: gray;
+}
+section{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.inps{
+
+    margin-bottom: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0 auto;
+    width: 100%;
+    padding-bottom: 0;
+    input {
+        margin-right: 10%;
+    }
+    div{
+        padding: 0;
+    }
+}
+div{
+    margin: 2% auto;
+    padding: 20px 5px;
+    width: 30%;
+}
+img {
+    width: 25%;
+    margin-left: 10px;
+    margin-right: 10px;
+    &:hover {
+        // border: 4px red solid;
+        cursor: pointer;
+        box-shadow:  0px 0px 15px 1px red;        border-radius: 50%;
+        transition: box-shadow .5s;
+    }
+}
+    
+
+.rounds , .board {
+    border: 3px white solid ;
+    border-radius: 5px;
+}
+.board {
+    position: relative;
+    height: 110px;
+    display: flex;
+    font-size: $fsize;
+    align-items: center;
+    .userRedBox , .compRedBox {
+        position: absolute;
+        background-color: red;
+        width: 55px;
+        // height: 50px;
+        padding: 7px 6px;
+        margin: 0;
+        right: -30px;
+        top: 38px;
+        font-size: 14px;
+    }
+    .userRedBox {
+        left: -30px;
+        right: unset;
+    }
+}
+h2 {
+    font-size: $fsize;
+}
+p {
+    padding: 3%;
+    font-size: 20px;
+    color: orange;
+    text-decoration: underline;
+    &:hover {
+        cursor: pointer;
+    }
+}
+// .signs {
+//     display: flex;
+//     justify-content: space-between;
+// }
+
+/* Media */
+
+@media screen and (max-width: 800px) {
+   div {
+       width: 50%;
+   }
+}
+
