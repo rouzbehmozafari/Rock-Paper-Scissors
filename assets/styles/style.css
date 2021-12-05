@@ -70,6 +70,12 @@ div {
   width: 30%;
 }
 
+#discribe {
+  opacity: 1;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
 img {
   width: 25%;
   margin-left: 10px;
@@ -78,18 +84,99 @@ img {
 
 img:hover {
   cursor: pointer;
-  -webkit-box-shadow: 0px 0px 15px 1px red;
-          box-shadow: 0px 0px 15px 1px red;
+}
+
+.reactResloss {
   border-radius: 50%;
-  -webkit-transition: -webkit-box-shadow .5s;
-  transition: -webkit-box-shadow .5s;
-  transition: box-shadow .5s;
-  transition: box-shadow .5s, -webkit-box-shadow .5s;
+  -webkit-animation: shadloss 1s alternate ease-out;
+          animation: shadloss 1s alternate ease-out;
+}
+
+@-webkit-keyframes shadloss {
+  from {
+    -webkit-box-shadow: 0px 0px 8px 0px rgba(255, 0, 0, 0.74);
+            box-shadow: 0px 0px 8px 0px rgba(255, 0, 0, 0.74);
+  }
+  to {
+    -webkit-box-shadow: 0px 0px 8px 7px rgba(255, 0, 0, 0.74);
+            box-shadow: 0px 0px 8px 7px rgba(255, 0, 0, 0.74);
+  }
+}
+
+@keyframes shadloss {
+  from {
+    -webkit-box-shadow: 0px 0px 8px 0px rgba(255, 0, 0, 0.74);
+            box-shadow: 0px 0px 8px 0px rgba(255, 0, 0, 0.74);
+  }
+  to {
+    -webkit-box-shadow: 0px 0px 8px 7px rgba(255, 0, 0, 0.74);
+            box-shadow: 0px 0px 8px 7px rgba(255, 0, 0, 0.74);
+  }
+}
+
+.reactReswin {
+  border-radius: 50%;
+  -webkit-animation: shadwin 1s alternate ease-out;
+          animation: shadwin 1s alternate ease-out;
+}
+
+@-webkit-keyframes shadwin {
+  from {
+    -webkit-box-shadow: 0px 0px 8px 0px #00f214;
+            box-shadow: 0px 0px 8px 0px #00f214;
+  }
+  to {
+    -webkit-box-shadow: 0px 0px 8px 7px #00f214;
+            box-shadow: 0px 0px 8px 7px #00f214;
+  }
+}
+
+@keyframes shadwin {
+  from {
+    -webkit-box-shadow: 0px 0px 8px 0px #00f214;
+            box-shadow: 0px 0px 8px 0px #00f214;
+  }
+  to {
+    -webkit-box-shadow: 0px 0px 8px 7px #00f214;
+            box-shadow: 0px 0px 8px 7px #00f214;
+  }
+}
+
+.reactResdraw {
+  border-radius: 50%;
+  -webkit-animation: shaddraw 1s alternate ease-out;
+          animation: shaddraw 1s alternate ease-out;
+}
+
+@-webkit-keyframes shaddraw {
+  from {
+    -webkit-box-shadow: 0px 0px 8px 0px #abb3ac;
+            box-shadow: 0px 0px 8px 0px #abb3ac;
+  }
+  to {
+    -webkit-box-shadow: 0px 0px 8px 7px #abb3ac;
+            box-shadow: 0px 0px 8px 7px #abb3ac;
+  }
+}
+
+@keyframes shaddraw {
+  from {
+    -webkit-box-shadow: 0px 0px 8px 0px #abb3ac;
+            box-shadow: 0px 0px 8px 0px #abb3ac;
+  }
+  to {
+    -webkit-box-shadow: 0px 0px 8px 7px #abb3ac;
+            box-shadow: 0px 0px 8px 7px #abb3ac;
+  }
 }
 
 .rounds, .board {
   border: 3px white solid;
   border-radius: 5px;
+}
+
+.rounds h2 {
+  margin-bottom: 20px;
 }
 
 .board {
@@ -113,11 +200,17 @@ img:hover {
   right: -30px;
   top: 38px;
   font-size: 14px;
+  font-weight: bold;
 }
 
 .board .userRedBox {
   left: -30px;
   right: unset;
+}
+
+.roundShow {
+  font-size: 25px;
+  display: none;
 }
 
 h2 {
