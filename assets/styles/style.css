@@ -98,8 +98,8 @@ img:hover {
             box-shadow: 0px 0px 8px 0px rgba(255, 0, 0, 0.74);
   }
   to {
-    -webkit-box-shadow: 0px 0px 8px 7px rgba(255, 0, 0, 0.74);
-            box-shadow: 0px 0px 8px 7px rgba(255, 0, 0, 0.74);
+    -webkit-box-shadow: 0px 0px 5px 7px rgba(255, 0, 0, 0.74);
+            box-shadow: 0px 0px 5px 7px rgba(255, 0, 0, 0.74);
   }
 }
 
@@ -109,8 +109,8 @@ img:hover {
             box-shadow: 0px 0px 8px 0px rgba(255, 0, 0, 0.74);
   }
   to {
-    -webkit-box-shadow: 0px 0px 8px 7px rgba(255, 0, 0, 0.74);
-            box-shadow: 0px 0px 8px 7px rgba(255, 0, 0, 0.74);
+    -webkit-box-shadow: 0px 0px 5px 7px rgba(255, 0, 0, 0.74);
+            box-shadow: 0px 0px 5px 7px rgba(255, 0, 0, 0.74);
   }
 }
 
@@ -122,23 +122,23 @@ img:hover {
 
 @-webkit-keyframes shadwin {
   from {
-    -webkit-box-shadow: 0px 0px 8px 0px #00f214;
-            box-shadow: 0px 0px 8px 0px #00f214;
+    -webkit-box-shadow: 0px 0px 5px 0px #00f214;
+            box-shadow: 0px 0px 5px 0px #00f214;
   }
   to {
-    -webkit-box-shadow: 0px 0px 8px 7px #00f214;
-            box-shadow: 0px 0px 8px 7px #00f214;
+    -webkit-box-shadow: 0px 0px 5px 7px #00f214;
+            box-shadow: 0px 0px 5px 7px #00f214;
   }
 }
 
 @keyframes shadwin {
   from {
-    -webkit-box-shadow: 0px 0px 8px 0px #00f214;
-            box-shadow: 0px 0px 8px 0px #00f214;
+    -webkit-box-shadow: 0px 0px 5px 0px #00f214;
+            box-shadow: 0px 0px 5px 0px #00f214;
   }
   to {
-    -webkit-box-shadow: 0px 0px 8px 7px #00f214;
-            box-shadow: 0px 0px 8px 7px #00f214;
+    -webkit-box-shadow: 0px 0px 5px 7px #00f214;
+            box-shadow: 0px 0px 5px 7px #00f214;
   }
 }
 
@@ -150,23 +150,23 @@ img:hover {
 
 @-webkit-keyframes shaddraw {
   from {
-    -webkit-box-shadow: 0px 0px 8px 0px #abb3ac;
-            box-shadow: 0px 0px 8px 0px #abb3ac;
+    -webkit-box-shadow: 0px 0px 5px 0px #abb3ac;
+            box-shadow: 0px 0px 5px 0px #abb3ac;
   }
   to {
-    -webkit-box-shadow: 0px 0px 8px 7px #abb3ac;
-            box-shadow: 0px 0px 8px 7px #abb3ac;
+    -webkit-box-shadow: 0px 0px 5px 7px #abb3ac;
+            box-shadow: 0px 0px 5px 7px #abb3ac;
   }
 }
 
 @keyframes shaddraw {
   from {
-    -webkit-box-shadow: 0px 0px 8px 0px #abb3ac;
-            box-shadow: 0px 0px 8px 0px #abb3ac;
+    -webkit-box-shadow: 0px 0px 5px 0px #abb3ac;
+            box-shadow: 0px 0px 5px 0px #abb3ac;
   }
   to {
-    -webkit-box-shadow: 0px 0px 8px 7px #abb3ac;
-            box-shadow: 0px 0px 8px 7px #abb3ac;
+    -webkit-box-shadow: 0px 0px 5px 7px #abb3ac;
+            box-shadow: 0px 0px 5px 7px #abb3ac;
   }
 }
 

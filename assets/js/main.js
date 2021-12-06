@@ -1,7 +1,4 @@
 // Defining the elements in HTML 
-let rock = document.getElementById('rock')
-let scissor = document.getElementById('scissor')
-let paper = document.getElementById('paper')
 let uRes = document.getElementById('uRes')
 let cRes = document.getElementById('cRes')
 let describe = document.getElementById('describe')
@@ -43,7 +40,7 @@ function cGen(){
     cChoice = choices[cMoveIndex]
 }
 
-// checks the result and addes the css and html effect
+// checks the result, affects the related variables and addes the css effect and html text
 function resultChecker(a,b,c){
     switch (a+b){
         case 'rockrock':
@@ -51,7 +48,7 @@ function resultChecker(a,b,c){
         case 'scissorscissor':
             beater = 'd';
             describe.innerHTML = 'Draw !'
-            c.setAttribute('class', 'reactResdraw')
+            c.setAttribute('class', 'reactResdraw')  /* win/loss color effect */
             break
 
         case 'rockscissor':
@@ -72,25 +69,26 @@ function resultChecker(a,b,c){
             describe.innerHTML = 'Computer beats the User.You lost !'
             break
     }
-    
 }
 
 
-let roundCounter = 1
+let roundCounter = 1 /* the number of rounds */
 let signs = document.querySelector('.signs')
-signs.addEventListener('click',i =>{
-    let selected = i.path[0]
-    
-    if (finish == false && rounds > 0){
+
+// this event is made for the div containig 3 images.after click it defines which image is selected
+signs.addEventListener('click',(i) =>{
+    let selected = i.srcElement /* defines which one is selected*/
+    if (finish == false && rounds > 0){ /* checks if the rounds is not finished and round by user is selected */
         roundShowRes.innerHTML = roundCounter
         roundMaxShow.innerHTML = rounds
-        roundCounter++
-        let uChoice = i.path[0].id
-        cGen();
+        roundCounter++ 
+        let uChoice = selected.id
+        cGen(); /* then generates cChoice */
         resultChecker(uChoice,cChoice,selected);
+
         uRes.innerHTML = uScore
         cRes.innerHTML = cScore
-        if (roundCounter == rounds+1){
+        if (roundCounter == rounds+1){ /* checks the ending of the game */
             finish = true
             if (uScore > cScore) {
                 describe.innerHTML = 'YOU WON'
@@ -99,7 +97,9 @@ signs.addEventListener('click',i =>{
                 describe.innerHTML = 'YOU Lost'
             }
         }
+        setTimeout(() => (selected.classList.remove("reactResdraw")), 770)
+        setTimeout(() => (selected.classList.remove("reactReswin")), 770)
+        setTimeout(() => (selected.classList.remove("reactResloss")), 770)
         }
-        
     }
 )
